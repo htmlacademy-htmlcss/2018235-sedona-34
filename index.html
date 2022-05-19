@@ -7,11 +7,19 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a><img class="sedona_logo" src="#" alt="Логотип Седона"></a>
+        <a class="navigation_logo">
+          <img class="page-header-logo" src="#" alt="Логотип Седона">
+        </a>
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="#">Главная</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
@@ -21,11 +29,11 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Любимое</span>
+              <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item btn">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link btn" href="#">
               <span class="visually-hidden">Кнопка</span>
             </a>
           </li>
@@ -100,24 +108,24 @@
         <form class="signing-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email-form">Ваш e-mail</label>
           <input class="signing-input" id="email-form" type="email" placeholder="Ваш e-mail" name="user-email">
-          <button class="signing-form-button" type="submit">Подписаться</button>
+          <button class="signing-form-button btn" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Twitter</span>
+            <a href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Facebook</span>
+            <a href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <a href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
