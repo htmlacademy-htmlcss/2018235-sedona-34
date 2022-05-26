@@ -34,7 +34,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link btn brown-btn" href="#">
+            <a class="navigation-link btn" href="#">
               <span class="visually-hidden">Хочу сюда!</span>
             </a>
           </li>
@@ -84,7 +84,7 @@
                </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
-               <legend class="catalog-filter-title">Тип жилья:</legend>
+               <legend class="catalog-filter-title">Тип Жилья:</legend>
                <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                      <label class="control">
@@ -110,11 +110,11 @@
                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                <label class="control-price">
                   <input class="price-input" type="number" name="min-price"  placeholder="0">
-                  от
+                  <span class="input-text">от</span>  
                </label>
                <label class="control-price">
                   <input class="price-input" type="number" name="max-price"  placeholder="9000">
-                  до
+                  <span class="input-text">до</span>  
                </label>
                <button class="button-set-min" type="button">
                   <span class="visually-hidden">установить минимальную цену</span>
@@ -148,7 +148,7 @@
                   <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                </a>
                <span class="hotel-type">Гостиница</span>
-               <a class="btn brown-btn" href="#">подробнее</a>
+               <a class="btn" href="#">подробнее</a>
                <b class="hotel-price">От 4000 ₽</b>
                <button class="btn blue-btn" type="button">в избранное</button> 
                <p class="hotel-card-estimation">
@@ -162,7 +162,7 @@
                   <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                </a>
                <span class="hotel-type">Гостиница</span>
-               <a class="btn brown-btn" href="#">подробнее</a>
+               <a class="btn" href="#">подробнее</a>
                <b class="hotel-price">От 5000 ₽</b>
                <button class="btn green-btn" type="button">в избранном</button>
                <p class="hotel-card-estimation">
@@ -176,7 +176,7 @@
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
                </a>
                <span class="hotel-type">Гостиница</span>
-               <a class="btn brown-btn" href="#">подробнее</a>
+               <a class="btn" href="#">подробнее</a>
                <b class="hotel-price">От 2500 ₽</b>
                <button class="btn blue-btn" type="button">в избранное</button> 
                <p class="hotel-card-estimation">
@@ -190,7 +190,7 @@
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
                </a>
                <span class="hotel-type">Гостиница</span>
-               <a class="btn brown-btn" href="#">подробнее</a>
+               <a class="btn" href="#">подробнее</a>
                <b class="hotel-price">От 1500 ₽</b>
                <button class="btn blue-btn" type="button">в избранное</button> 
                <p class="hotel-card-estimation">
@@ -230,13 +230,13 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-signing-form">
+      <section class="footer-signing-form catalog-footer-signing-form">
         <h2 class="footer-signing-form-title">Подпишитесь на рассылку</h2>
-        <p class="footer-signing-form-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="footer-signing-form-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="signing-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email-form">Ваш e-mail</label>
           <input class="signing-input" id="email-form" type="email" placeholder="Ваш e-mail" name="user-email">
-          <button class="signing-form-button btn" type="submit">Подписаться</button>
+          <button class="signing-form-button btn blue-btn" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="footer-contacts">
@@ -260,7 +260,7 @@
         </ul>
         <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="copyright-logo" href="https://htmlacademy.ru/">
-           <span class="visually-hidden">html academy</span>
+         <img src="images/footer/logo_htmlacademy.svg" width="115" height="33" alt="html-academy" class="html-academy-link">
          </a>
       </section>
     </footer>
