@@ -19,13 +19,13 @@ body {
    font-size: 18px;
    line-height: 21px;
    color: #000000;
-   background-color: #F2F2F2;
+   background-color: #f2f2f2;
 }
 
 /* Pages */
 
 .page-header {
-   background-color: #fff;
+   background-color: #ffffff;
 }
 
 .navigation-link {
@@ -37,13 +37,13 @@ body {
    color: #000000; 
 }
 
-.btn {
+.button {
    font-family: inherit;
    font-weight: 700;
    font-size: 16px;
    line-height: 20px;
    text-transform: uppercase;
-   color: #FFFFFF;
+   color: #ffffff;
    background-color: #756157;
    text-align: center;
    text-decoration: none;
@@ -59,16 +59,16 @@ body {
 
 .advantages-intro {
    text-align: center;
-   background-color: #FFFFFF;
-   
+   background-color: #ffffff;  
 }
+
 .section-title {
    font-weight: 700;
    font-size: 30px;
    line-height: 36px;
-   text-transform: uppercase;
-   
+   text-transform: uppercase;   
 }
+
 .section-text {
    font-size: 22px;
    line-height: 26px;
@@ -83,9 +83,8 @@ body {
 }
 
 .item-blue {
-   color: #FFFFFF;
-   background-color: #82B3D3;
-   
+   color: #ffffff;
+   background-color: #82b3d3;   
 }
 
 .advantages-title {
@@ -112,7 +111,7 @@ body {
 }
 
 .item-white {
-   background-color: #FFFFFF;
+   background-color: #ffffff;
 }
 
 .item-light-blue {
@@ -122,7 +121,7 @@ body {
 /* hotel-searching */
 
 .hotel-searching {
-   background-color: #FFFFFF;
+   background-color: #ffffff;
    text-align: center;
 }
 
@@ -139,7 +138,7 @@ body {
    color: #333333;
 }
 
-.hotel-searching-btn {
+.hotel-searching-button {
    font-size: 20px;
    line-height: 36px;
    text-decoration: none;
@@ -148,9 +147,9 @@ body {
 /* footer */
 
 .footer-signing-form {
-   color:#FFFFFF;
-   background-color: #82B3D3;
-   background-image: url("../images/footer/background\ \(1\).jpg");
+   color:#ffffff;
+   background-color: #82b3d3;
+   background-image: url("../images/footer/background.jpg");
    background-repeat: no-repeat;
    background-size: 1200px auto;
    text-align: center;
@@ -162,29 +161,29 @@ body {
    line-height: 36px;
    text-transform: uppercase;
 }
+
 .footer-signing-form-text {
    font-size: 22px;
    line-height: 26px;
 }
 
-.blue-btn {
-  
-   background-color: #82B3D3;
+.blue-button {  
+   background-color: #82b3d3;
 }
 
-.signing-form-btn {
+.signing-form-button {
    font-size: 20px;
    line-height: 36px;
 }
+
 .signing-input {
    font: inherit;
-   background-color: #F2F2F2;
+   background-color: #f2f2f2;
 }
 
 .footer-contacts {
-   background-color: #FFFFFF;
+   background-color: #ffffff;
    color: #000000;
-
 }
 
 .footer-contacts-phone {
@@ -198,8 +197,8 @@ body {
 /* page-catalog */
 
 .filter {
-   color: #FFFFFF;
-   background-color: #82B3D3;
+   color: #ffffff;
+   background-color: #82b3d3;
    background-image: url("../images/catalog/filter-background.jpg");
    background-repeat: no-repeat;
    background-size: 1200px auto;
@@ -215,7 +214,6 @@ body {
    font-size: 16px;
    text-decoration: none;
    color: inherit;
-
 }
 
 .catalog-filter-title {
@@ -228,9 +226,8 @@ body {
    font-family: inherit;
    font-size: 18px;
    line-height: 21px;
-   color: #FFFFFF;
-   background-color: transparent;
-     
+   color: #ffffff;
+   background-color: transparent;     
 }
 
 .input-text {
@@ -240,7 +237,7 @@ body {
 .catalog-reset-button {
    font-size: 16px;
    line-height: 20px;
-   color: #FFFFFF;
+   color: #ffffff;
    background-color: transparent;
    border: none;
 }
@@ -248,7 +245,7 @@ body {
 /* hotels */
 
 .hotels {
-   background-color: #FFFFFF;
+   background-color: #ffffff;
 }
 
 .hotels-found {
@@ -263,7 +260,7 @@ body {
    color: #333333;
 }
 
-.view-btn {
+.view-button {
    text-decoration: none;
 }
 
@@ -283,8 +280,8 @@ body {
    color: 333333;
 }
 
-.green-btn {
-   background-color: #7DB54F;
+.green-button {
+   background-color: #7db54f;
 }
 
 .estimation-rating {
@@ -292,7 +289,7 @@ body {
    font-size: 16px;
    line-height: 20px;
    text-transform: uppercase;  
-   background-color: #F2F2F2;
+   background-color: #f2f2f2;
 }
 
 .pagination-link {
@@ -301,13 +298,13 @@ body {
    line-height: 36px;
    text-decoration: none;
    text-align: center;
-   color: #FFFFFF;
-   background-color: #82B3D3;
+   color: #ffffff;
+   background-color: #82b3d3;
 }
 
 .pagination-current {
    color: #000000;
-   background-color: #F2F2F2;
+   background-color: #f2f2f2;
 }
 
 .select-cards {
@@ -315,7 +312,7 @@ body {
 }
 
 .catalog-footer-signing-form {
-   background-color: #FFFFFF;
+   background-color: #ffffff;
    background-image: none;
 }
 
