@@ -163,12 +163,13 @@ body {
    margin: 0;
    padding: 0;
    display: flex;
-   min-height: 384px;
+   
 }
 
 .advices-item {
    width: 400px;
-   color: #333333;  
+   color: #333333;
+   min-height: 384px;  
 }
 
 .advices-title {
