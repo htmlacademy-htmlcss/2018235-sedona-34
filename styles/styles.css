@@ -21,7 +21,7 @@ html {
 body {
    margin: 0;
    height: 100%;
-   min-width: 1280px;
+   min-width: 1200px;
    font-family: "PT Sans", sans-serif;
    font-size: 18px;
    line-height: 21px;
@@ -60,10 +60,14 @@ body {
    padding-right: 70px;
 }
 
+.navigation_logo {
+   margin-right: 47px;
+}
+
 .page-header-logo {
    width: 139px;
    height: 70px;
-   margin-right: 47px;
+   display: block
 }
 
 .navigation-list {
@@ -122,6 +126,8 @@ body {
    background-color: #756157;
    text-align: center;
    text-decoration: none;
+   display: block;
+   min-width: 140px;
    box-sizing: border-box;
    border-radius: 4px;
    padding-top: 9px;
@@ -244,14 +250,12 @@ body {
 .advices-item {
    width: 400px;
    color: #333333;
-   min-height: 384px;  
-}
-
-.advices-item-content {
+   min-height: 384px; 
+   box-sizing: border-box;
    padding-top: 80px;
    padding-right: 85px;
    padding-bottom: 81px;
-   padding-left: 85px;
+   padding-left: 85px; 
 }
 
 .advices-title {
@@ -311,7 +315,6 @@ body {
 }
 
 .hotel-searching-button {
-   display: block;
    width: 574px;
    font-size: 20px;
    line-height: 36px;
@@ -332,7 +335,6 @@ body {
    text-align: center;
    padding-top: 94px;
    padding-bottom: 93px;
-   display: block;
 }
 
 .footer-signing-form-title {
@@ -351,8 +353,12 @@ body {
    margin-bottom: 46px;
 }
 
+.signing-form {
+   display: flex;
+   justify-content: center;
+} 
+
 .action-button {
-   width: 140px;
    background-color: #82b3d3;
    border: none;
 }
@@ -548,13 +554,11 @@ body {
    line-height: 20px;
    font-weight: 400;
    text-transform: none;
-   display: block;
    width: 160px;
    text-align: center;
    color: #ffffff;
    background-color: transparent;
    border: none;
-   cursor: pointer;
 }
 
 /* hotels */
@@ -623,10 +627,26 @@ body {
    margin-bottom: 96px;
    padding: 0;
    list-style: none;
+   display: grid;
+   grid-template-columns: repeat(3, 340px);
+   column-gap: 18px;
+}
+
+.hotel-card {
+   padding: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
 
 .hotel-card-link {
    text-decoration: none;  
+   flex-grow: 1;
+}
+
+.hotel-card-image {
+   display: block;
+   margin-bottom: 16px;
 }
 
 .hotel-card-title {
@@ -634,17 +654,28 @@ body {
    font-size: 24px;
    line-height: 28px;
    color: #000000;
+   margin: 0;
+   margin-bottom: 16px;
 }
 
 .hotel-type, .hotel-price {
    font-weight: 400;
-   color: 333333;
+   color: #333333;
+   display: block;
+   margin-bottom: 16px;
 }
 
 .selected-button {
    background-color: #7db54f;
    border: none;
-   width: 140px;
+}
+
+.hotel-card-button {
+   margin-bottom: 16px;
+}
+
+.hotel-card-estimation {
+   margin: 0;
 }
 
 .estimation-rating {
@@ -653,6 +684,11 @@ body {
    line-height: 20px;
    text-transform: uppercase;  
    background-color: #f2f2f2;
+   display: block;
+   padding-top: 9px;
+   padding-right: 22px;
+   padding-bottom: 8px;
+   padding-left: 23px;
 }
 
 .pagination-container {
