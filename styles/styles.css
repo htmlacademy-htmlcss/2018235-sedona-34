@@ -211,14 +211,12 @@ body {
 .key-item {
    width: 400px;
    color: #ffffff;
-   background-color: #82b3d3;   
-}
-
-.big-item-content {
+   background-color: #82b3d3; 
    padding-top: 92px;
    padding-right: 85px;
    padding-bottom: 92px;
    padding-left: 85px;
+   box-sizing: border-box;  
 }
 
 .advantages-title {
