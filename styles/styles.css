@@ -99,10 +99,38 @@ body {
    font-size: 20px;
    line-height: 26px; 
    text-align: center;
-   text-decoration: none; 
+   text-decoration: none;
+   white-space: nowrap; 
    color: #000000; 
    padding-top: 20px;
-   padding-bottom: 20px;
+   padding-bottom: 20px; 
+   box-sizing: border-box; 
+   position: relative;
+}
+
+.navigation-link:focus {
+   outline: none;
+}
+
+.navigation-list:first-of-type .navigation-link:hover {
+   color: #756157;
+}
+
+.navigation-list:first-of-type .navigation-link:focus {
+   color: #756157;
+}
+
+.navigation-list:first-of-type .navigation-link:active {
+   color: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-link-current::before {
+   position: absolute;
+   content: "";
+   height: 2px;
+   width: 100%;
+   background-color: #756257;
+   bottom: 0;
 }
 
 .navigation-user .navigation-item {
@@ -135,7 +163,7 @@ body {
 }
 
 
-.icon-favourite:before {
+.icon-favourite::before {
    content: "";
    position: absolute;
    top: 15px;
@@ -148,8 +176,7 @@ body {
    z-index: 1;
 }
 
-.icon-favourite::after {
-   content: "12";
+.icon-favourite-count {
    font-size: 10px;
    line-height: 13px;
    color: #ffffff;
@@ -159,6 +186,18 @@ body {
    top: 18px;
    left: 29px;
    z-index: 2;  
+}
+
+.navigation-link:hover .navigation-icon {
+   fill: #756157;
+}
+
+.navigation-link:focus .navigation-icon {
+   fill: #756157;
+}
+
+.navigation-link:active .navigation-icon {
+   fill: rgba(117, 97, 87, 0.3);
 }
 
 .button {
