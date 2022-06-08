@@ -221,6 +221,24 @@ body {
    cursor: pointer;
 }
 
+.button:hover {
+   background-color: #615048;
+}
+
+.button:focus {
+   background-color: #615048;
+}
+
+.button:active {
+   background-color: #756157;
+   color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+   background-color: #e5e5e5;
+   color: #ffffff;
+}
+
 .navigation-link.button {
    width: 160px;
 }
@@ -444,6 +462,24 @@ body {
 .action-button {
    background-color: #82b3d3;
    border: none;
+}
+
+.action-button:hover {
+   background-color: #68a2ca;
+}
+
+.action-button:focus {
+   background-color: #68a2ca;
+}
+
+.action-button:active {
+   background-color: #82b3d3;
+   color: rgba(255, 255, 255, 0.3);
+}
+
+.action-button:disabled {
+   background-color: #e5e5e5;
+   color: #ffffff;
 }
 
 .signing-form-button {
@@ -761,6 +797,24 @@ body {
 .selected-button {
    background-color: #7db54f;
    border: none;
+}
+
+.selected-button:hover {
+   background-color: #6c9e42;
+}
+
+.selected-button:focus {
+   background-color: #6c9e42;
+}
+
+.selected-button:active {
+   background-color: #7db54f;
+   color: rgba(255, 255, 255, 0.3);
+}
+
+.selected-button:disabled {
+   background-color: #e5e5e5;
+   color: #ffffff;
 }
 
 .estimation-rating {
