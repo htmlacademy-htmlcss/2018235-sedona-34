@@ -662,8 +662,13 @@ body {
    list-style: none;
 }
 
+.breadcrumbs-item:first-child {
+  width: 13px;
+  position: relative;
+}
+
 .breadcrumbs-item:nth-child(2) {
-   margin-left: 40px;
+   margin-left: 25px;
 }
 
 .breadcrumbs-link {
@@ -671,6 +676,53 @@ body {
    font-size: 16px;
    text-decoration: none;
    color: inherit;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-item:after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 9px;
+  left: 24px;
+  top: 6px;
+  background-image: url("../images/catalog/filter-icons/arrow-right.svg");
+
+}
+
+.main-page-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 2px;
+  margin: auto;
+  fill: #ffffff;
+}
+
+.breadcrumbs-link:hover .main-page-icon {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus .main-page-icon {
+  fill: #ffffff;
+  outline: none;
+}
+
+.breadcrumbs-link:active .main-page-icon {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .section-header {
@@ -744,11 +796,15 @@ body {
    color: rgba(255, 255, 255, 0.3);
 }
 
+.catalog-filter-buttons {
+  align-self: flex-end;
+}
+
 .catalog-filter-buttons .action-button{
    width: 160px;
    padding-top: 14px;
    padding-bottom: 14px;
-   margin-bottom: 11px;
+   margin-bottom: 20px;
 }
 
 .catalog-reset-button {
@@ -761,6 +817,20 @@ body {
    color: #ffffff;
    background-color: transparent;
    border: none;
+   cursor: pointer;
+}
+
+.catalog-reset-button:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-reset-button:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+.catalog-reset-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* hotels */
@@ -824,6 +894,31 @@ body {
    border-color: #000000;
 }
 
+.view-button:hover {
+  border-color: #000000;
+}
+
+.view-button:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+
+.view-button:active {
+  border-color: #000000;
+}
+
+.view-button-blocks {
+  background: url("../images/catalog/view-cards-icon.svg") no-repeat 50% 50%;
+}
+
+.view-button-card {
+  background: url("../images/catalog/view-fullsize-icon.svg") no-repeat 50% 50%;
+}
+
+.view-button-lines {
+  background: url("../images/catalog/view-list-icon.svg") no-repeat 50% 50%;
+}
+
 .hotel-list {
    margin: 0;
    margin-bottom: 96px;
@@ -839,12 +934,27 @@ body {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-
 }
 
 .hotel-card-link {
    text-decoration: none;
    flex-grow: 1;
+}
+
+.hotel-card-link:hover .hotel-card-title {
+  color: #756157;
+}
+
+.hotel-card-link:focus .hotel-card-title {
+  color: #756157;
+}
+
+.hotel-card-link:focus {
+  outline: none;
+}
+
+.hotel-card-link:active .hotel-card-title {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .hotel-card-image {
@@ -899,6 +1009,32 @@ body {
    color: #ffffff;
 }
 
+.hotel-stars {
+  height: 17px;
+  align-self: center;
+  background-image: url("../images/catalog/star.svg"),
+  url("../images/catalog/star.svg"),
+  url("../images/catalog/star.svg"),
+  url("../images/catalog/star.svg");
+  background-repeat: no-repeat, no-repeat,  no-repeat, no-repeat;
+  background-position: left center, 24px center, 48px center, 72px center;
+}
+
+.hotel-stars-three {
+  background-image: url("../images/catalog/star.svg"),
+  url("../images/catalog/star.svg"),
+  url("../images/catalog/star.svg");
+  background-repeat: no-repeat, no-repeat,  no-repeat;
+  background-position: left center, 24px center, 48px center;
+}
+
+.hotel-stars-two {
+  background-image: url("../images/catalog/star.svg"),
+  url("../images/catalog/star.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, 24px center;
+}
+
 .estimation-rating {
    font-weight: 400;
    font-size: 16px;
@@ -943,12 +1079,27 @@ body {
    box-sizing: border-box;
    width: 60px;
    height: 60px;
+   border: 1px solid #82b3d3;
    border-radius: 4px;
+}
+
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current {
    color: #000000;
    background-color: #f2f2f2;
+   border: none;
 }
 
 .select-cards {
