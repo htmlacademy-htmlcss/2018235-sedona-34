@@ -30,13 +30,13 @@ body {
 }
 
 .visually-hidden {
-   position: absolute;	
-   width: 1px; 
-   height: 1px; 
-   margin: -1px; 
-   padding: 0; 
-   border: 0; 
-   clip: rect(0 0 0 0); 
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   border: 0;
+   clip: rect(0 0 0 0);
    overflow: hidden;
 }
 
@@ -86,7 +86,7 @@ body {
 .navigation-user {
    width: 300px;
    margin-left: auto;
-   justify-content: flex-end;   
+   justify-content: flex-end;
 }
 
 .navigation-item:not(:last-child) {
@@ -97,14 +97,14 @@ body {
    display: block;
    font-weight: 700;
    font-size: 20px;
-   line-height: 26px; 
+   line-height: 26px;
    text-align: center;
    text-decoration: none;
-   white-space: nowrap; 
-   color: #000000; 
+   white-space: nowrap;
+   color: #000000;
    padding-top: 20px;
-   padding-bottom: 20px; 
-   box-sizing: border-box; 
+   padding-bottom: 20px;
+   box-sizing: border-box;
    position: relative;
 }
 
@@ -185,7 +185,7 @@ body {
    position: absolute;
    top: 18px;
    left: 29px;
-   z-index: 2;  
+   z-index: 2;
 }
 
 .navigation-link:hover .navigation-icon {
@@ -211,13 +211,13 @@ body {
    text-align: center;
    text-decoration: none;
    display: block;
-   min-width: 140px;
+   width: 140px;
    box-sizing: border-box;
    border-radius: 4px;
    padding-top: 9px;
    padding-right: 15px;
    padding-bottom: 8px;
-   padding-left: 15px;  
+   padding-left: 15px;
    cursor: pointer;
 }
 
@@ -227,6 +227,7 @@ body {
 
 .button:focus {
    background-color: #615048;
+   outline: none;
 }
 
 .button:active {
@@ -252,9 +253,10 @@ body {
 /* index */
 
 .main-index {
-   background-image: url("../images/index/index-background.jpg");
+   background-image: url('../images/index/divider.svg'), url("../images/index/index-background.jpg");
    background-repeat: no-repeat;
    background-size: 1200px auto;
+   background-position-y: 428px, 0;
 }
 
 .welcome-sedona-logo {
@@ -267,7 +269,7 @@ body {
    text-align: center;
    background-color: #ffffff;
    padding-top: 63px;
-   padding-bottom: 90px;  
+   padding-bottom: 90px;
 }
 
 .section-title {
@@ -277,7 +279,7 @@ body {
    text-transform: uppercase;
    margin: 0;
    margin-bottom: 31px;
-   padding: 0;   
+   padding: 0;
 }
 
 .section-text {
@@ -314,12 +316,12 @@ body {
 .key-item {
    width: 400px;
    color: #ffffff;
-   background-color: #82b3d3; 
+   background-color: #82b3d3;
    padding-top: 92px;
    padding-right: 85px;
    padding-bottom: 92px;
    padding-left: 85px;
-   box-sizing: border-box;  
+   box-sizing: border-box;
 }
 
 .advantages-title {
@@ -341,6 +343,11 @@ body {
    margin: 0;
 }
 
+.advantages-photo {
+  display: block;
+  object-fit: contain;
+}
+
 .advices-list {
    margin: 0;
    padding: 0;
@@ -351,12 +358,12 @@ body {
 .advices-item {
    width: 400px;
    color: #333333;
-   min-height: 384px; 
+   min-height: 384px;
    box-sizing: border-box;
    padding-top: 80px;
    padding-right: 85px;
    padding-bottom: 81px;
-   padding-left: 85px; 
+   padding-left: 85px;
 }
 
 .advices-title {
@@ -364,7 +371,7 @@ body {
    font-size: 24px;
    line-height: 28px;
    text-transform: uppercase;
-   color: #000000;  
+   color: #000000;
    margin: 0;
    margin-top: 102px;
    margin-bottom: 30px;
@@ -381,8 +388,24 @@ body {
    padding-left: 85px;
 }
 
+.accommodation-item {
+   background-image: url("../images/index/advantage-icon-house.svg");
+   background-repeat: no-repeat;
+   background-position: 163px 81px;
+}
+
+
 .food-item {
    background-color: #ffffff;
+   background-image: url("../images/index/advantage-icon-food.svg");
+   background-repeat: no-repeat;
+   background-position: 163px 81px;
+}
+
+.souvenirs-item {
+  background-image: url("../images/index/advantage-icon-souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: 163px 81px;
 }
 
 .road-item {
@@ -457,7 +480,7 @@ body {
 .signing-form {
    display: flex;
    justify-content: center;
-} 
+}
 
 .action-button {
    background-color: #82b3d3;
@@ -527,6 +550,30 @@ body {
    display: block;
    min-height: 50px;
    min-width: 50px;
+   position: relative;
+}
+
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83b3d3;
+}
+
+.footer-social-link:hover .social-icon {
+  fill: #68a2cA;
+}
+
+.footer-social-link:focus .social-icon {
+  fill: #68a2cA;
+  outline: none;
+}
+
+.footer-social-link:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .phone-section {
@@ -538,14 +585,49 @@ body {
    font-size: 40px;
    line-height: 40px;
    text-decoration: none;
-   color: #000000;   
+   color: #000000;
+}
+
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-phone:focus {
+  color: #756157;
+  outline: none;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .copyright-section {
    min-width: 115px;
    min-height: 33px;
+   position: relative;
 }
 
+.footer-logo-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
+.copyright-logo:hover .footer-logo-icon {
+  fill: #756157;
+}
+
+.copyright-logo:focus .footer-logo-icon {
+  fill: #756157;
+  outline: none;
+}
+.copyright-logo:active .footer-logo-icon {
+  fill: rgba(117, 97, 87, 0.3);
+}
 /* page-catalog */
 
 .main-inner {
@@ -597,7 +679,7 @@ body {
 
 .catalog-filter {
    display: flex;
-} 
+}
 
 .group-checkbox {
    width: 150px;
@@ -655,7 +737,7 @@ body {
    font-size: 18px;
    line-height: 21px;
    color: #ffffff;
-   background-color: transparent;       
+   background-color: transparent;
 }
 
 .input-text {
@@ -733,7 +815,7 @@ body {
    box-sizing: border-box;
    text-decoration: none;
    width: 48px;
-   height: 48px; 
+   height: 48px;
    border: 2px solid #e5e5e5;
    border-radius: 4px;
 }
@@ -757,11 +839,11 @@ body {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   
+
 }
 
 .hotel-card-link {
-   text-decoration: none;  
+   text-decoration: none;
    flex-grow: 1;
 }
 
@@ -821,7 +903,7 @@ body {
    font-weight: 400;
    font-size: 16px;
    line-height: 20px;
-   text-transform: uppercase;  
+   text-transform: uppercase;
    background-color: #f2f2f2;
    display: block;
    padding-top: 9px;
