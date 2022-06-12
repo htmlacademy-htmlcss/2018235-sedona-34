@@ -48,6 +48,7 @@ body {
    min-height: 100%;
    width: 1200px;
    margin: 0 auto;
+   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
@@ -1011,28 +1012,27 @@ body {
 
 .hotel-stars {
   height: 17px;
+  width: 89px;
   align-self: center;
-  background-image: url("../images/catalog/star.svg"),
-  url("../images/catalog/star.svg"),
-  url("../images/catalog/star.svg"),
-  url("../images/catalog/star.svg");
-  background-repeat: no-repeat, no-repeat,  no-repeat, no-repeat;
-  background-position: left center, 24px center, 48px center, 72px center;
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: space;
+  background-position: left center;
 }
 
 .hotel-stars-three {
-  background-image: url("../images/catalog/star.svg"),
-  url("../images/catalog/star.svg"),
-  url("../images/catalog/star.svg");
-  background-repeat: no-repeat, no-repeat,  no-repeat;
-  background-position: left center, 24px center, 48px center;
+  height: 17px;
+  width: 66px;
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: space;
+  background-position: left center;
 }
 
 .hotel-stars-two {
-  background-image: url("../images/catalog/star.svg"),
-  url("../images/catalog/star.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left center, 24px center;
+  height: 17px;
+  width: 42px;
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: space;
+  background-position: left center;
 }
 
 .estimation-rating {
@@ -1052,6 +1052,17 @@ body {
 .pagination-container {
    display: flex;
    justify-content: space-between;
+   position: relative;
+}
+
+.pagination-container::before {
+  content: "";
+  position: absolute;
+  width: 1055px;
+  height: 1px;
+  background-color: #e6e6e6;
+  top: -30px;
+
 }
 
 .pagination {
