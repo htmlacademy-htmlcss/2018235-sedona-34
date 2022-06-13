@@ -121,20 +121,27 @@
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <div class="price-input-container">
                     <label class="control-price">
-                      <input class="price-input left-input" type="number" name="min-price" value="0" placeholder="от">
+                      <input class="price-input left-input" type="number" name="min-price" value="0">
                       <span class="input-text">от</span>
                     </label>
                     <label class="control-price">
-                      <input class="price-input right-input" type="number" name="max-price" value="9000" placeholder="до">
+                      <input class="price-input right-input" type="number" name="max-price" value="9000">
                       <span class="input-text">до</span>
                     </label>
                   </div>
-                  <button class="button-set-min" type="button">
-                     <span class="visually-hidden">установить минимальную цену</span>
-                  </button>
-                  <button class="button-set-max" type="button">
-                     <span class="visually-hidden">установить максимальную цену</span>
-                  </button>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 228px;">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">установить минимальную цену</span>
+                       </button>
+                       <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">установить максимальную цену</span>
+                       </button>
+                      </div>
+
+                    </div>
+                  </div>
                </fieldset>
                <div class="catalog-filter-buttons">
                   <button class="button action-button" type="submit">Применить</button>

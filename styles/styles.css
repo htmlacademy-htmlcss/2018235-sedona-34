@@ -809,24 +809,38 @@ body {
 .price-input-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 28px;
+}
+
+.control-price {
+  position: relative;
 }
 
 .price-input {
-   font-family: inherit;
-   font-size: 18px;
-   line-height: 21px;
-   color: #ffffff;
-   background-color: transparent;
-   border: 2px solid #ffffff;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
   width: 144px;
   height: 48px;
   box-sizing: border-box;
   padding: 14px 19px;
+  appearance: textfield;
 }
 
-.price-input::placeholder {
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.input-text {
    color: rgba(255, 255, 255, 0.3);
-   text-align: right;
+   position: absolute;
+   right: 14px;
+   top: 12px;
 }
 
 .left-input {
@@ -852,6 +866,52 @@ body {
   background-color: #756257;
   outline: none;
   box-shadow: none;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 288px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  top: -8px;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.toggle-min {
+  left: 0;
+}
+
+.toggle-max {
+  right: -10px;
 }
 
 .catalog-filter-buttons {
