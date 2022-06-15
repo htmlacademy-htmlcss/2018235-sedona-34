@@ -158,9 +158,11 @@
          <section class="hotels">
             <div class="sorting-block">
                <h2 class="hotels-found-title">Найдено гостиниц: 38</h2>
-               <select class="select-control control-sorting" aria-label="Сортировка">
-                  <option value="cheap-first" selected>Сначала дешёвые</option>
-               </select>
+                <div class="select-sorting">
+                  <select class="select-control" aria-label="Сортировка">
+                        <option value="cheap-first" selected>Сначала дешёвые</option>
+                    </select>
+                  </div>
                <ul class="view-button-list">
                   <li class="view-button-item">
                      <a href="#" class="view-button view-button-blocks view-button-current">
@@ -268,12 +270,14 @@
                      <a class="pagination-link" href="#">10</a>
                   </li>
                </ul>
-               <label class="select-cards">
-                  Гостиниц на странице:
-                  <select class="select-control control-cards-amount">
-                     <option class="cards-amount" value="four" selected>4</option>
+               <div class="select-cards-container">
+                <label class="select-cards" for="select">Гостиниц на странице:</label>
+                <div class="select-cards-amount">
+                  <select class="select-control" id="select">
+                    <option class="cards-amount" value="four" selected>4</option>
                   </select>
-               </label>
+                </div>
+              </div>
             </div>
          </section>
       </main>

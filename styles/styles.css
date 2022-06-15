@@ -1069,8 +1069,19 @@ body {
   color:rgba(0, 0, 0, 0.3);
 }
 
-.control-sorting {
+.select-sorting {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 290px;
+}
+
+.select-control {
+  width: 100%;
+  background-image: url("../images/catalog/filter-icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
 }
 
 .view-button-list {
@@ -1307,16 +1318,16 @@ body {
    border-radius: 4px;
 }
 
-.pagination-link:hover {
+.pagination-link:not(.pagination-current):hover {
   background-color: #68a2ca;
 }
 
-.pagination-link:focus {
+.pagination-link:not(.pagination-current):focus {
   background-color: #68a2ca;
   outline: none;
 }
 
-.pagination-link:active {
+.pagination-link:not(.pagination-current):active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1326,13 +1337,21 @@ body {
    border: none;
 }
 
+.select-cards-container {
+  display: flex;
+  align-items: center;
+}
+
 .select-cards {
    color: #333333;
 }
 
-.control-cards-amount {
-  margin-left: 51px;
+.select-cards-amount {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 160px;
+  margin-left: 51px;
 }
 
 .catalog-footer-signing-form {
