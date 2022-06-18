@@ -168,6 +168,48 @@
           </div>
         </section>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-searching-form">
+          <button class="modal-close-button" type="submit">
+            <div class="cross"></div>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="input-date-container">
+                <label class="label-modal" for="arrival">Дата заезда:</label>
+                <input class="input-modal" type="text" name="arrival-date" id="arrival" placeholder="27 апреля 2020">
+                <p class="modal-text error">Мы не можем отправить вас в прошлое.</p>
+              </div>
+              <div class="input-date-container">
+                <label class="label-modal" for="departure">Дата выезда:</label>
+                <input class="input-modal" type="text" name="departure-date" id="departure" placeholder="1 сентября 2021">
+                <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+              <div class="input-number-container">
+                <div class="adults-container">
+                  <label class="label-modal" for="adults">Взрослые:</label>
+                  <div class="input-container">
+                    <input class="number-input" type="text" name="adults-number" id="adults" placeholder="2">
+                    <button class="minus-button" type="button"></button>
+                    <button class="plus-button" type="button"></button>
+                  </div>
+                </div>
+                <div class="children-container children">
+                  <label class="label-modal" for="children">Дети:</label>
+                  <div class="input-container">
+                    <input class="number-input" type="text" name="children-number" id="children" placeholder="1">
+                    <button class="minus-button" type="button"></button>
+                    <button class="plus-button" type="button"></button>
+                  </div>
+                </div>
+              </div>
+              <button class="button action-button modal-search-button" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>

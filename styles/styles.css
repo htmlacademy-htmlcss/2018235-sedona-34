@@ -650,6 +650,239 @@ body {
 .copyright-logo:active .footer-logo-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 3;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.modal-searching-form {
+  width: 575px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.cross {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 13px;
+  height: 13px;
+  background: url("../images/modal/close.svg") no-repeat center;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  outline: none;
+}
+
+.modal-close-button:active .cross {
+  opacity: 0.3;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 63px;
+  padding: 0;
+}
+
+.label-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.input-date-container {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  grid-template-rows: min-content 29px;
+  align-items: center;
+}
+
+.input-date-container + .input-date-container {
+  margin-top: 11px;
+}
+
+.input-modal {
+  width: 420px;
+  height: 50px;
+  padding: 15px 19px 14px;
+  box-sizing: border-box;
+  background: #f2f2f2 url("../images/modal/calendar.svg") no-repeat right 19px center;
+  border: none;
+  border-radius: 4px;
+}
+
+.input-modal::placeholder,
+.number-input::placeholder{
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  vertical-align: middle;
+}
+
+.input-modal:hover {
+  background-color: #e6e6e6;
+}
+
+.input-modal:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.input-modal:active {
+  background-color: #ffffff;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.modal-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  grid-column-start: 2;
+  align-self: end;
+}
+
+.error {
+  color: #ff5757;
+}
+
+.input-number-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 11px;
+  margin-bottom: 40px;
+}
+
+.adults-container, .children-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adults-container {
+  width: 288px;
+}
+
+.children-container {
+  width: 230px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 133px;
+}
+
+.number-input {
+  padding: 15px 62px 14px 61px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.minus-button {
+  position: absolute;
+  top: 17px;
+  left: 19px;
+  width: 14px;
+  height: 14px;
+  background: url("../images/modal/minus.svg") no-repeat center;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
+}
+
+.plus-button {
+  position: absolute;
+  top: 17px;
+  right: 19px;
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  background: url("../images/modal/plus.svg") no-repeat center;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
+}
+
+.plus-button:hover,
+.minus-button:hover {
+  opacity: 1;
+}
+
+.plus-button:focus,
+.minus-button:focus {
+  opacity: 1;
+  outline: 3px solid #83B3D3;
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+.plus-button:active,
+.minus-button:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.modal-search-button {
+  font-size: 20px;
+  line-height: 36px;
+  width: 575px;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.modal-search-button:focus {
+  outline: 3px solid #756257;;
+}
+
 /* page-catalog */
 
 .main-inner {
@@ -721,7 +954,6 @@ body {
   left: 24px;
   top: 6px;
   background-image: url("../images/catalog/filter-icons/arrow-right.svg");
-
 }
 
 .main-page-icon {
@@ -1029,6 +1261,7 @@ body {
 .sorting-block {
    display: flex;
    flex-wrap: wrap;
+   align-items: center;
    margin-bottom: 56px;
 }
 
@@ -1233,7 +1466,7 @@ body {
 
 .hotel-stars {
   height: 17px;
-  width: 89px;
+  width: 88px;
   align-self: center;
   background-image: url("../images/catalog/star.svg");
   background-repeat: space;
