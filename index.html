@@ -115,7 +115,7 @@
         <section class="hotel-searching">
           <h2 class="hotel-searching-header">Заинтересовались?</h2>
           <p class="hotel-searching-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="hotel-searching-button button" href="catalog.html">Поиск гостиницы в Седоне</a>
+          <button class="hotel-searching-button button">Поиск гостиницы в Седоне</button>
         </section>
       </main>
       <footer>
@@ -168,7 +168,7 @@
           </div>
         </section>
       </footer>
-      <div class="modal-container">
+      <div class="modal-container modal-container-closed">
         <div class="modal modal-searching-form">
           <button class="modal-close-button" type="submit">
             <div class="cross"></div>
@@ -197,7 +197,18 @@
                   </div>
                 </div>
                 <div class="children-container children">
-                  <label class="label-modal" for="children">Дети:</label>
+                  <span class="label-modal label-modal-icon">
+                    <label class="label-modal" for="children">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                        <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12.5" cy="12.5" r="12.5" fill="currentColor"/><g clip-path="url(#a)" fill="#fff">
+                            <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a">
+                          <path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                </span>
                   <div class="input-container">
                     <input class="number-input" type="text" name="children-number" id="children" placeholder="1">
                     <button class="minus-button" type="button"></button>

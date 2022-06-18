@@ -449,6 +449,7 @@ body {
    margin: 0 auto;
    padding-top: 12px;
    padding-bottom: 12px;
+   border: none;
 }
 
 /* footer */
@@ -662,6 +663,12 @@ body {
   z-index: 3;
 }
 
+/* modal */
+
+.modal-container-closed {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -728,6 +735,11 @@ body {
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
+}
+
+.label-modal-icon {
+  position: relative;
+  padding-right: 16px;
 }
 
 .input-date-container {
@@ -881,6 +893,66 @@ body {
 
 .modal-search-button:focus {
   outline: 3px solid #756257;;
+}
+
+.tooltip {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: 6px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #83b3d3;
+  display: block;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color: #68a2cA;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: none;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: absolute;
+  left: -115px;
+  top: 40px;
+  display: none;
+}
+
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 118px;
+  width: 19px;
+  height: 9px;
+  background-image: url("../images/modal/triangle.svg");
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 /* page-catalog */
