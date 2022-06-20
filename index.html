@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -65,7 +67,9 @@
                 <b class="advantages-count">— №1 —</b>
                 <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-photo" src="images/index/photo-houses.jpg" width="800" height="384" alt="фотография домов Седоны.">
+              <div class="photo-container">
+                <img class="advantages-photo" src="images/index/photo-houses.jpg" width="800" height="384" alt="фотография домов Седоны.">
+              </div>
               <ul class="advices-list">
                 <li class="advices-item accommodation-item">
                   <h4 class="advices-title">Жильё</h4>
@@ -82,7 +86,9 @@
               </ul>
             </li>
             <li class="advantages-item big-item">
-              <img class="advantages-photo" src="images/index/photo-canyon.jpg" width="800" height="384" alt="фотография каньонов Седоны.">
+              <div class="photo-container">
+                <img class="advantages-photo" src="images/index/photo-canyon.jpg" width="800" height="384" alt="фотография каньонов Седоны.">
+              </div>
               <div class="key-item">
                 <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
                 <b class="advantages-count">— №2 —</b>
@@ -205,7 +211,7 @@
                     <span class="tooltip">
                       <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                         <span class="visually-hidden">Информация</span>
-                        <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="12.5" cy="12.5" r="12.5" fill="currentColor"/><g clip-path="url(#a)" fill="#fff">
                             <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a">
                           <path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg>
