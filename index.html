@@ -57,10 +57,12 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container main-index">
-        <h1 class="visually-hidden">Седона.</h1>
-        <img class="welcome-sedona-logo" src="images/index/welcome.svg" width="458" height="352"
-          alt="Логотип Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+      <main class="main-container">
+        <div class="main-logo">
+          <h1 class="visually-hidden">Седона.</h1>
+          <img class="welcome-sedona-logo" src="images/index/welcome.svg" width="458" height="352"
+            alt="Логотип Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+        </div>
         <section>
           <div class="advantages-intro">
             <h2 class="visually-hidden">Преимущества Седоны.</h2>
@@ -203,20 +205,21 @@
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="input-date-container">
                 <label class="label-modal" for="arrival">Дата заезда:</label>
-                <input class="input-modal" type="text" name="arrival-date" id="arrival" placeholder="27 апреля 2020">
+                <input class="input-modal" type="text" name="arrival-date" id="arrival" placeholder="27 апреля 2020"
+                  required>
                 <p class="modal-text error">Мы не можем отправить вас в прошлое.</p>
               </div>
               <div class="input-date-container">
                 <label class="label-modal" for="departure">Дата выезда:</label>
                 <input class="input-modal" type="text" name="departure-date" id="departure"
-                  placeholder="1 сентября 2021">
+                  placeholder="1 сентября 2021" required>
                 <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
               </div>
               <div class="input-number-container">
                 <div class="adults-container">
                   <label class="label-modal" for="adults">Взрослые:</label>
                   <div class="input-container">
-                    <input class="number-input" type="text" name="adults-number" id="adults" placeholder="2">
+                    <input class="number-input" type="text" name="adults-number" id="adults" placeholder="2" required>
                     <button class="minus-button" type="button">
                       <span class="visually-hidden">Уменьшить количество.</span>
                     </button>
@@ -249,7 +252,8 @@
                     </span>
                   </span>
                   <div class="input-container">
-                    <input class="number-input" type="text" name="children-number" id="children" placeholder="1">
+                    <input class="number-input" type="text" name="children-number" id="children" placeholder="1"
+                      required>
                     <button class="minus-button" type="button">
                       <span class="visually-hidden">Уменьшить количество.</span>
                     </button>

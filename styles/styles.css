@@ -109,10 +109,6 @@ body {
   position: relative;
 }
 
-.navigation-link:focus {
-  outline: none;
-}
-
 .navigation-list:first-of-type .navigation-link:hover {
   color: #756157;
 }
@@ -228,7 +224,6 @@ body {
 
 .button:focus {
   background-color: #615048;
-  outline: none;
 }
 
 .button:active {
@@ -248,23 +243,23 @@ body {
 
 .main-container {
   flex-grow: 1;
-  padding-top: 51px;
   margin-top: -5px;
 }
 
 /* index */
 
-.main-index {
+.main-logo {
+  background-color: #3f5e72;
   background-image: url("../images/index/divider.svg"), url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: 1200px auto;
-  background-position-y: 428px, 0;
+  background-size: 1200px auto, cover;
+  background-position-y: bottom, 0;
+  padding: 51px 70px 82px;
 }
 
 .welcome-sedona-logo {
   display: block;
   margin: 0 auto;
-  margin-bottom: 82px;
 }
 
 .advantages-intro {
@@ -465,7 +460,7 @@ body {
 
 .footer-signing-form {
   color: #ffffff;
-  background-color: #82b3d3;
+  background-color: #3f5e72;
   background-image: url("../images/footer/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -547,7 +542,6 @@ body {
 
 .signing-input:focus {
   background-color: #e6e6e6;
-  outline: none;
 }
 
 .signing-input:active {
@@ -600,10 +594,6 @@ body {
   fill: #68a2ca;
 }
 
-.footer-social-link:focus {
-  outline: none;
-}
-
 .footer-social-link:active .social-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
@@ -626,7 +616,6 @@ body {
 
 .footer-contacts-phone:focus {
   color: #756157;
-  outline: none;
 }
 
 .footer-contacts-phone:active {
@@ -655,7 +644,6 @@ body {
 
 .copyright-logo:focus .footer-logo-icon {
   fill: #756157;
-  outline: none;
 }
 
 .copyright-logo:active .footer-logo-icon {
@@ -725,7 +713,6 @@ body {
 
 .modal-close-button:active {
   background-color: #e6e6e6;
-  outline: none;
 }
 
 .modal-close-button:active::after {
@@ -896,7 +883,6 @@ body {
 .plus-button:active,
 .minus-button:active {
   opacity: 0.3;
-  outline: none;
 }
 
 .modal-search-button {
@@ -973,13 +959,9 @@ body {
 
 /* page-catalog */
 
-.main-inner {
-  padding-top: 0;
-}
-
 .filter {
   color: #ffffff;
-  background-color: #82b3d3;
+  background-color: #3f5e72;
   background-image: url("../images/catalog/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1030,7 +1012,6 @@ body {
 
 .breadcrumbs-link:focus {
   color: #ffffff;
-  outline: none;
 }
 
 .breadcrumbs-link:active {
@@ -1063,7 +1044,6 @@ body {
 
 .breadcrumbs-link:focus .main-page-icon {
   fill: #ffffff;
-  outline: none;
 }
 
 .breadcrumbs-link:active .main-page-icon {
@@ -1251,7 +1231,6 @@ body {
 
 .price-input:active {
   background-color: #756257;
-  outline: none;
   box-shadow: none;
 }
 
@@ -1314,6 +1293,7 @@ body {
 }
 
 .catalog-reset-button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1374,6 +1354,7 @@ body {
   height: 49px;
   border-radius: 4px;
   width: 100%;
+  background-color: #ffffff;
   background-image: url("../images/catalog/filter-icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -1386,7 +1367,6 @@ body {
 
 .select-control:focus {
   border-color: #68a2ca;
-  outline: none;
 }
 
 .select-control:active {
@@ -1446,7 +1426,6 @@ body {
 
 .view-button:focus {
   border-color: #68a2ca;
-  outline: none;
 }
 
 .view-button:active {
@@ -1493,10 +1472,6 @@ body {
 
 .hotel-card-link:focus .hotel-card-title {
   color: #756157;
-}
-
-.hotel-card-link:focus {
-  outline: none;
 }
 
 .hotel-card-link:active .hotel-card-title {
@@ -1658,7 +1633,6 @@ body {
 
 .pagination-link:not(.pagination-current):focus {
   background-color: #68a2ca;
-  outline: none;
 }
 
 .pagination-link:not(.pagination-current):active {
